@@ -9,6 +9,7 @@ import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
+import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -38,14 +39,26 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing setSelectedPage={setSelectedPage} />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
       {/* END HOME */}
 
       <LineGradient />
       {/* SKILLS */}
       <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
       </div>
       {/* END SKILLS */}
 
@@ -53,7 +66,13 @@ function App() {
 
       {/* PROJECTS */}
       <div className="w-5/6 mx-auto">
-        <Projects />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
+          <Projects />
+        </motion.div>
       </div>
       {/* END PROJECTS */}
 
@@ -61,7 +80,13 @@ function App() {
 
       {/* TESTIMONALS */}
       <div className="w-5/6 mx-auto">
-        <Testimonials />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("testimonials")}
+        >
+          <Testimonials />
+        </motion.div>
       </div>
       {/* END TESTIMONALS */}
 
@@ -69,7 +94,13 @@ function App() {
 
       {/* CONTACT */}
       <div className="w-5/6 mx-auto">
-        <Contact />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
       </div>
       {/* END CONTACT */}
 
