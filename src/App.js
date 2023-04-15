@@ -79,7 +79,7 @@ function App() {
       <LineGradient />
 
       {/* TESTIMONALS */}
-      <div className="w-5/6 mx-auto">
+      {/* <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -87,10 +87,10 @@ function App() {
         >
           <Testimonials />
         </motion.div>
-      </div>
+      </div> */}
       {/* END TESTIMONALS */}
 
-      <LineGradient />
+      {/* <LineGradient /> */}
 
       {/* CONTACT */}
       <div className="w-5/6 mx-auto">
