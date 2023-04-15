@@ -26,7 +26,7 @@ const MySkills = () => {
                     </p>
                     <LineGradient width="w-1/3"/>
                     <p className="mt-10 mb-7">
-                    Tôi luôn tìm cách để cải thiện kỹ năng của mình, đặc biệt là trong các ngôn ngữ lập trình như  Python, C#, JavaScript, và các FrameWorks như React, Angular, Node.js
+                    Tôi luôn tìm cách để cải thiện kỹ năng của mình, đặc biệt là trong các ngôn ngữ lập trình như  Python, C#, JavaScript, và các FrameWorks như React, Laravel, Node.js
                     </p>
                 </motion.div>
 
